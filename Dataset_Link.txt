@@ -1,0 +1,38 @@
+=========================================================
+Dataset Information
+=========================================================
+
+Project:
+E-Commerce Sales Analysis using SQL & Python
+
+Dataset Name:
+Brazilian E-Commerce Public Dataset by Olist
+
+Source:
+https://www.kaggle.com/models/narendrabariha/e-commerce-target-sales-dataset?select=sellers.csv
+
+Description:
+This project uses the Brazilian E-Commerce Public Dataset provided by Olist.
+The dataset contains real-world transactional data from an e-commerce platform,
+including customer information, orders, products, sellers, payments, and
+geolocation details.
+
+Tables Used:
+1. customers.csv
+2. orders.csv
+3. order_items.csv
+4. payments.csv
+5. products.csv
+6. sellers.csv
+7. geolocation.csv
+
+Instructions:
+
+1. Download the dataset from the Kaggle link above.
+2. Create a folder named 'dataset' in the project directory.
+3. Copy all CSV files into the dataset folder.
+4. Update the dataset path in database_setup.py if necessary.
+5. Run database_setup.py to import the data into MySQL.
+6. Open E-Commerce.ipynb and execute the analysis.
+
+=========================================================
