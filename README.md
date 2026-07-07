@@ -239,7 +239,7 @@ E-Commerce-Sales-Analysis/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/E-Commerce-Sales-Analysis.git
+git clone https://github.com/VikashBasfore/E-Commerce-Sales-Analysis.git
 ```
 
 ---
@@ -356,11 +356,11 @@ Some future enhancements include:
 
 **Vikash Basfore**
 
-📧 Email: your-email@example.com
+📧 Email: vikashbasfore79@gmail.com
 
-💼 LinkedIn: https://linkedin.com/in/your-profile
+💼 LinkedIn: www.linkedin.com/in/vikash-basfore-99a95b3bb
 
-💻 GitHub: https://github.com/yourusername
+💻 GitHub: https://github.com/VikashBasfore
 
 ---
 
