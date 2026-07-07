@@ -1,57 +1,55 @@
 # 🛒 E-Commerce Sales Analysis using SQL & Python
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?logo=mysql)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-blue?logo=pandas)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
-![Status](https://img.shields.io/badge/Project-Completed-success)
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
-This project demonstrates an **end-to-end E-Commerce Sales Analysis** using **Python** and **MySQL**. The objective is to transform raw transactional data into meaningful business insights by combining SQL querying with Python-based analysis and visualization.
+This project demonstrates an end-to-end **E-Commerce Sales Analysis** using **Python**, **MySQL**, and **SQL**.
 
-The workflow begins with importing multiple CSV files into a MySQL database using Python, followed by solving real-world business problems using SQL and presenting insights through visualizations.
+The project starts by importing multiple CSV files into a MySQL database using Python, followed by performing business analysis using SQL queries. Finally, Python is used to visualize important business insights.
 
-This project showcases practical skills required for **Data Analyst**, **Business Analyst**, and **SQL Developer** roles.
+The primary objective is to demonstrate practical SQL, database management, and data analysis skills through real-world business scenarios.
 
 ---
 
-# 🎯 Business Objective
+## 🎯 Business Objectives
 
-The goal of this project is to analyze an E-Commerce database and answer business questions related to:
+The analysis focuses on answering key business questions, including:
 
-- Customer behavior
-- Sales performance
+- Customer distribution analysis
+- Order trend analysis
+- Revenue analysis
+- Product category performance
 - Seller performance
-- Product categories
-- Payment trends
+- Payment behavior
 - Customer retention
-- Revenue growth
-- Business KPIs
-
-The analysis demonstrates how SQL can be used to support data-driven business decisions.
-
----
-
-# 🛠 Tech Stack
-
-| Technology | Purpose |
-|------------|----------|
-| Python | Data Import & Visualization |
-| MySQL | Data Storage & Querying |
-| Pandas | Data Manipulation |
-| Matplotlib | Data Visualization |
-| Jupyter Notebook | Analysis Environment |
+- Year-over-Year sales growth
+- Running total (Cumulative Sales)
+- Business KPI reporting
 
 ---
 
-# 📂 Dataset
+## 🛠 Tech Stack
 
-The project uses a Brazilian E-Commerce dataset containing multiple relational tables.
+- Python
+- MySQL
+- SQL
+- Pandas
+- Matplotlib
+- Jupyter Notebook
 
-## Tables
+---
+
+## 📂 Dataset Information
+
+This project uses an E-Commerce dataset consisting of multiple relational tables.
+
+### Tables Used
 
 - Customers
 - Orders
@@ -61,99 +59,101 @@ The project uses a Brazilian E-Commerce dataset containing multiple relational t
 - Sellers
 - Geolocation
 
-These tables are connected through primary and foreign keys to perform relational analysis.
+### Dataset Source
+
+Kaggle Dataset
+
+https://www.kaggle.com/models/narendrabariha/e-commerce-target-sales-dataset?select=sellers.csv
 
 ---
 
-# ⚙ Project Workflow
+## 📁 Repository Structure
+
+```
+E-Commerce-Sales-Analysis/
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── database_setup.py
+├── business_queries.sql
+├── E-Commerce.ipynb
+|── Dataset_Link.txt
+```
+
+---
+
+## ⚙ Project Workflow
 
 ```
 CSV Files
-     │
-     ▼
+      │
+      ▼
 Python (Pandas)
-     │
-     ▼
-Automatic Table Creation
-     │
-     ▼
+      │
+      ▼
 MySQL Database
-     │
-     ▼
-SQL Analysis
-     │
-     ▼
+      │
+      ▼
+SQL Business Analysis
+      │
+      ▼
+Python Data Visualization
+      │
+      ▼
 Business Insights
-     │
-     ▼
-Python Visualization
 ```
 
 ---
 
-# 📥 Database Creation
+## 📥 Database Setup
 
-The project begins by creating the database automatically using Python.
+The `database_setup.py` script automates the database creation process.
 
-The script performs the following tasks:
+### Features
 
-✔ Reads multiple CSV files
-
-✔ Connects to MySQL
-
-✔ Creates database tables dynamically
-
-✔ Detects SQL data types automatically
-
-✔ Cleans column names
-
-✔ Handles NULL values
-
-✔ Inserts data into MySQL
-
-This demonstrates a complete ETL (Extract, Transform, Load) process before analysis.
+- Connects to MySQL
+- Reads multiple CSV files
+- Automatically creates database tables
+- Detects SQL data types
+- Cleans column names
+- Handles NULL values
+- Imports all records into MySQL
 
 ---
 
-# 📊 Business Questions Solved
+## 📊 Business Questions Solved
 
-## Basic SQL Analysis
+### Basic SQL Analysis
 
-- List unique customer cities
+- List all unique customer cities
 - Count total orders
-- Calculate total sales
-- Identify customer distribution by state
+- Analyze customer distribution by state
 - Monthly order analysis
 - Payment installment analysis
 
----
-
-## Intermediate SQL Analysis
+### Intermediate SQL Analysis
 
 - Revenue by product category
 - Average products purchased
 - Average order value
-- Revenue contribution by category
-- Customer purchasing behavior
 - Seller revenue analysis
+- Customer purchasing behavior
 
----
-
-## Advanced SQL Analysis
+### Advanced SQL Analysis
 
 - Customer Retention Analysis
 - Running Total (Cumulative Sales)
 - Moving Average
-- Window Functions
-- Ranking Sellers
+- Seller Ranking
 - Top Customers
 - Year-over-Year Growth Analysis
 
 ---
 
-# 🧠 SQL Concepts Demonstrated
+## 🧠 SQL Concepts Used
 
-This project covers a wide range of SQL concepts including:
+This project demonstrates the use of:
 
 - SELECT
 - WHERE
@@ -166,138 +166,117 @@ This project covers a wide range of SQL concepts including:
 - Multiple Table Joins
 - CASE WHEN
 - Subqueries
-- Common Table Expressions (CTEs)
 - Window Functions
+- SUM() OVER()
+- AVG() OVER()
 - ROW_NUMBER()
 - RANK()
 - DENSE_RANK()
-- SUM() OVER()
-- AVG() OVER()
 - Running Total
 - Moving Average
 
 ---
 
-# 📈 Visualizations
+## 💻 Python Concepts Used
 
-The project includes Python visualizations for better business understanding.
-
-### Current Visualizations
-
-- Cumulative Sales Trend
-- Monthly Sales Trend
-- Revenue by Product Category *(Recommended)*
-- Top Sellers *(Recommended)*
-
-> Screenshots can be found inside the **images/** folder.
+- Database Connectivity
+- File Handling
+- Data Import
+- Data Cleaning
+- Pandas DataFrames
+- Data Visualization
+- MySQL Integration
 
 ---
 
-# 📊 Key Business Insights
+## 🚀 How to Run the Project
 
-Some important findings from the analysis include:
-
-- Sales showed consistent growth over time.
-- A few product categories contributed the majority of total revenue.
-- Seller revenue is concentrated among top-performing sellers.
-- Installment payments are widely used by customers.
-- Customer purchasing behavior varies significantly across states.
-- Running totals and moving averages provide better trend analysis than monthly sales alone.
-
----
-
-# 📁 Project Structure
-
-```
-E-Commerce-Sales-Analysis/
-│
-├── README.md
-├── requirements.txt
-├── LICENSE
-│
-├── notebook/
-│     └── E-Commerce.ipynb
-│
-├── sql/
-│     ├── database_creation.sql
-│     ├── business_queries.sql
-│
-├── images/
-│     ├── cumulative_sales.png
-│     ├── monthly_orders.png
-│     ├── category_revenue.png
-│     └── seller_revenue.png
-│
-└── dataset/
-      └── Dataset Link.txt
-```
-
----
-
-# 🚀 How to Run the Project
-
-### Clone Repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/VikashBasfore/E-Commerce-Sales-Analysis.git
+git clone https://github.com/VikashBsfore/E-Commerce-Sales-Analysis.git
 ```
 
----
-
-### Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
+### 3. Download the Dataset
+
+Download the dataset from:
+
+https://www.kaggle.com/models/narendrabariha/e-commerce-target-sales-dataset?select=sellers.csv
+
+Place all CSV files inside the project dataset folder.
+
+### 4. Configure MySQL
+
+Create a MySQL database named:
+
+```
+ecommerce
+```
+
+Update the MySQL credentials in:
+
+```
+database_setup.py
+```
+
+### 5. Import Dataset
+
+Run:
+
+```bash
+python database_setup.py
+```
+
+### 6. Open the Notebook
+
+Launch Jupyter Notebook and open:
+
+```
+E-Commerce.ipynb
+```
+
+Execute all cells to reproduce the analysis.
+
 ---
 
-### Import Dataset
+## 📈 Key Insights
 
-1. Download the dataset.
-2. Update the folder path in the notebook.
-3. Execute the Python script to import CSV files into MySQL.
-
----
-
-### Run SQL Queries
-
-Open the notebook and execute each SQL query sequentially.
+- Analyzed customer purchasing behavior.
+- Evaluated monthly sales trends.
+- Identified top-performing sellers.
+- Measured revenue contribution by product category.
+- Calculated cumulative sales using SQL Window Functions.
+- Analyzed customer retention and yearly sales growth.
+- Generated business insights using SQL and Python.
 
 ---
 
-### Generate Visualizations
+## 📚 Skills Demonstrated
 
-Run the visualization cells to generate charts and business insights.
-
----
-
-# 📚 Skills Demonstrated
-
-## SQL
+### SQL
 
 - Advanced SQL
-- Analytical SQL
 - Window Functions
-- Ranking
-- Running Totals
-- CTEs
+- Analytical Queries
+- Aggregate Functions
 - Joins
-- Aggregations
+- Business Reporting
 
----
-
-## Python
+### Python
 
 - Pandas
-- Database Connectivity
-- Data Import
+- MySQL Connector
 - Data Cleaning
+- Data Analysis
 - Visualization
 
----
-
-## Data Analytics
+### Data Analytics
 
 - Business Analysis
 - KPI Reporting
@@ -307,61 +286,40 @@ Run the visualization cells to generate charts and business insights.
 
 ---
 
-# 🎯 Learning Outcomes
+## 📌 Learning Outcomes
 
 Through this project I learned:
 
-- Designing relational database workflows
 - Importing CSV data into MySQL using Python
-- Writing complex SQL queries
-- Solving real business problems using SQL
-- Applying analytical window functions
-- Building business reports
+- Writing advanced SQL queries
+- Working with relational databases
+- Performing business-oriented data analysis
+- Building analytical reports
 - Creating visualizations using Python
 
 ---
 
-# 🔮 Future Improvements
+## 🔮 Future Enhancements
 
-Some future enhancements include:
-
-- Build an interactive Power BI Dashboard
-- Create a Tableau Dashboard
-- Sales Forecasting using Machine Learning
-- Customer Segmentation
-- RFM Analysis
-- Interactive Streamlit Dashboard
+- Build an interactive Power BI dashboard
+- Develop a Tableau dashboard
+- Perform customer segmentation
+- Implement sales forecasting
+- Create an interactive Streamlit application
 
 ---
 
-# 📌 Repository Highlights
-
-✔ End-to-End Data Analysis
-
-✔ SQL + Python Integration
-
-✔ MySQL Database Creation
-
-✔ Business Problem Solving
-
-✔ Advanced SQL Window Functions
-
-✔ Python Visualizations
-
-✔ Recruiter-Friendly Project Structure
-
----
-
-# 🙋‍♂️ Author
+## 👨‍💻 Author
 
 **Vikash Basfore**
 
-📧 Email: vikashbasfore79@gmail.com
+Aspiring Data Analyst
 
-💼 LinkedIn: www.linkedin.com/in/vikash-basfore-99a95b3bb
-
-💻 GitHub: https://github.com/VikashBasfore
+- GitHub: https://github.com/VikashBasfore
+- LinkedIn: www.linkedin.com/in/vikash-basfore-99a95b3bb
 
 ---
 
-⭐ If you found this project useful, consider giving it a star!
+## ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
